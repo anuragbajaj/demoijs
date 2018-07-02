@@ -98,14 +98,14 @@ function addGlobalFunctions(window) {
         startTestcaseHeading.id = "startTestcaseHeading";
         startTestcaseHeading.className = "STARThead";
         // var textHead = win.document.createTextNode("START Panel");
-        startTestcaseHeading.innerText = thisIns.resourceBundle.getText("YMSG_PANEL_TEXT");
+        startTestcaseHeading.innerText = "Testcase heading";
         startAssistedPanel.appendChild(startTestcaseHeading);
 
         var StartaCheckButton = win.document.createElement("span");
         StartaCheckButton.href = "#";
         StartaCheckButton.className = "STARTdummy";
         StartaCheckButton.id = "startCheck";
-        StartaCheckButton.title =thisIns.resourceBundle.getText("XTOL_PANEL_CHECK");
+        StartaCheckButton.title = "Check";
         var StartIconImageCheck = win.document.createElement("img");
         StartIconImageCheck.id = "startCheckIMG";
         StartIconImageCheck.src =  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD3SURBVFhHY9x06sF/hgEETFB6wMCoA0YdMOoAguVA0/TlUBZ5oC4zEsrCDohyACFDcAFi9I6mAao64NHz1wxLtx5gePD0FVSEMKCaA0CWL9t6kOHuo+cMj17Q2QEwy3/9/s2gpSzHYGOkBZUhDIh2wJv3nxhmr9nFcObqHagIBKBbHuRqycDESLy/iFb5+89vhpdv3jNsO3Sa4eTFm2AxSi0HAaJVS4oKwy3Yeewcw/YjZym2HARI0oFs0enLtyi2HARI1oVsIaWWgwBZOkEWx/k7UWw5CJCtW05SlGLLQYByEygEg786pjUY8CgYdcCoA0a6AxgYAKZpdAN8q735AAAAAElFTkSuQmCC";
@@ -117,7 +117,7 @@ function addGlobalFunctions(window) {
         StartaCheckButton1.id = "startExportImport";
         StartaCheckButton1.className = "STARTdummy";
         StartaCheckButton1.href = "#";
-        StartaCheckButton1.title = thisIns.resourceBundle.getText("XTOL_PANEL_EXPORT");
+        StartaCheckButton1.title = "Export";
         var StartIconImageExpImp = win.document.createElement("img");
         StartIconImageExpImp.id = "startExportImportIMG";
         StartIconImageExpImp.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGPSURBVFhHY9x06sF/hgEETFB6wMCoA0YdMOqAAXcAwYLo4o37UBZ+wMPFwaAsJwnlEQ8IOqBp+nIGGXFhBhYWZqgIJvjy7QfYAXF+zlAR4gFRDsiP8WPg5+WGimCCu4+eM9x58pzB0VSXgY2VFSpKHKBKGgAFvbuVEcOzV+8Zdh47BxUlDlDFAf/+/2P4+Pkrw9dv3xlOXrxJkiPIjoJHz18zXLn9gOEOMPg/AC1HB+b66uBQIQRIDoFPX78xLNq0l2HBhj0MZ67ewWo5CBAbEiQ5AGT5nDU7GR48fQUVoRyQ5ICN+04y/Pv3n0FNXprB0kCTwcfBjMHf0YLBy84UzAdlVxBgYmQCBz8xUUB0Gvj+8xfDqcs3GdyAhnKws0FlUQEoZJZtPcAQ4GzBoKUsBxXFD4gOARZmZrCPcVkOAhzsrAwxvo5EWw4CRDtARJAPHLTYAKggAiU4CRFBBjlJUagocYCoKAD5iI0Vd1H87uMXBiYmRtoUxQNeGdEakJQNaQFGHTDqgFEHDLADGBgAQWiWQ8nVn9MAAAAASUVORK5CYII=";
@@ -130,7 +130,7 @@ function addGlobalFunctions(window) {
         StartaCheckButton2.href = "#";
         StartaCheckButton2.className = "STARTdummy";
         StartaCheckButton2.id = "startStopRecord";
-        StartaCheckButton2.title = thisIns.resourceBundle.getText("XTOL_PANEL_STOP");
+        StartaCheckButton2.title = "Stop test";
         var StartIconImagestprec = win.document.createElement("img");
         StartIconImagestprec.id = "startStopRecordIMG";
         StartIconImagestprec.src ="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJOSURBVFhH7ZXvS1NRGMe/umaR6dwPt5ziqFWYKzB/BP1aQUPCF0HU6+hFf1V/QdCLQEKIkMReLCfRbEXTIGes5rbrlmZjRmr3e3aGG3V37oXCF+0Dl8t9Dofne57zfZ7bMhlL7WIfaZXvfaMpoCmgKcDyHNgslfHuwwq+aAVkta8i5vN0we9xYeB4Hxwd7SJmFksCkstpPJmJoVTewqGDbejpdsFusyGd1USszW7H+KVzGD4dlDvUmBbwLBpHNP4eRz1OTITH0Odzy5UKWnEDUy/mkfqcQ+hkALcjF+VKY0x5gCdn8tHQCdy/M/5bcuJxduLuzeu4dv6suKL5xJJcaYxSAO+cZefJb1wZQWtL4y3hkTM4FegVFWNVVCgF8DS8X5a9mvxTJo/J5y/rHlapysTVUezs7OJ18qOMGKMUQLfTcLVlL65vIp5crnuya5WOIJ3th+F1O7CqFWXEGKUAthrdbhW/vieTL8gvY5QCfm5vi1aziu2ATVyDCqUAmo99bpX06pq+t0t+GaMU0Ot1CRPWOtrpOIKhgWN1j8+9l6y89QP5gn51+l4VykFUWP+GB4+ewu91ij43A7vizeIK7t2K/HFm1KKsgMvRgciFITHhZl+9lVFjEksp0RWXhweVyYlSAOEEHAz2YyaWwMOpWWx8L8mVPVh2nvzxdBT9Pd0Ij4XkSmMs/YzmFhYxPbcg3M0+Z6vR7TQc75xxnpzJVROziuXfcU5PxAmXyRX0QVMZPnQ7DRcKBkyVvRbLAv425ur0D2kKaAr43wUAvwBMafYTNcQUKAAAAABJRU5ErkJggg==";
@@ -163,7 +163,7 @@ function addGlobalFunctions(window) {
     STARTHeader.className = "STARTouter-header";
     STARTouter.appendChild(STARTHeader);
     var startexpimpspanclose = win.document.createElement('span');
-    startexpimpspanclose.innerText = "×";
+    startexpimpspanclose.innerText = "Ã—";
     startexpimpspanclose.className = "STARTclose";
     STARTHeader.appendChild(startexpimpspanclose);
     var startexpimpheading = win.document.createElement('h3');
@@ -252,7 +252,7 @@ function addGlobalFunctions(window) {
     STARTHeader1.className = "STARTouter-header";
     STARTouter1.appendChild(STARTHeader1);
     var startexpimpspanclose1 = win.document.createElement('span');
-    startexpimpspanclose1.innerText = "×";
+    startexpimpspanclose1.innerText = "Ã—";
     startexpimpspanclose1.className = "STARTclose";
     STARTHeader1.appendChild(startexpimpspanclose1);
     var startexpimpheading1 = win.document.createElement('h3');
@@ -8306,7 +8306,7 @@ function startRecording(window,that) {
 	 * intervalsetter=setInterval(function () {
 	 * that.addEventsToFrames(window);}, 300);
 	 */
-	this.resourceBundle = that.getResourceBundle();
+	
     thatWin = window;
     thisIns = this;
     this.addGlobalVariables(window);
