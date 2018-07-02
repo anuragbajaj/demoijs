@@ -8311,5 +8311,5 @@ function startRecording(window,that) {
     thisIns = this;
     this.addGlobalVariables(window);
     this.addGlobalFunctions(window);
-    this.s4start.location = that._tagName;
+    /*this.s4start.location = that._tagName;*/
 }
